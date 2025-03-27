@@ -1,5 +1,6 @@
 package com.example.model.task;
 
+import com.example.model.user.User;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -14,15 +15,12 @@ public class Task {
     private Long id;
     private String title;
     private String description;
-//    @OneToMany
-//    @JoinColumn(name = "user_id")
-//    private User author;
-//    @OneToOne
-//    @JoinColumn(name = "user_id")
-//    private User executor;
-    @Column(name = "author_name")
-    private String authorName;
-    private String executorName;
+    @OneToMany
+    @JoinColumn(name = "user_id")
+    private User author;
+    @OneToOne
+    @JoinColumn(name = "user_id")
+    private User executor;
     @ElementCollection
     @CollectionTable(name = "comments",joinColumns = @JoinColumn(name = "task_id"))
     @Column(name = "commentText")
