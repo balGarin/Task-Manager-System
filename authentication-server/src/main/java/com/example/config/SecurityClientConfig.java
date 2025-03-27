@@ -1,4 +1,4 @@
-package com.examle.config;
+package com.example.config;
 
 import com.nimbusds.jose.jwk.JWKSet;
 import com.nimbusds.jose.jwk.RSAKey;
