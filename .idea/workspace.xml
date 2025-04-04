@@ -4,25 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="311a80e6-354b-4552-a1f4-fa46c239a3bc" name="Changes" comment="feat: new realisation">
-      <change afterPath="$PROJECT_DIR$/authentication-server/src/main/java/com/example/Security/CustomUserDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-server/src/main/java/com/example/Security/SecurityUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-server/src/main/java/com/example/config/SecurityUserConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-server/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-server/src/main/resources/data.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-server/src/main/resources/schema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/example/model/user/User.java" afterDir="false" />
+    <list default="true" id="311a80e6-354b-4552-a1f4-fa46c239a3bc" name="Changes" comment="feat: not work realisation">
+      <change afterPath="$PROJECT_DIR$/authentication-server/src/main/java/com/example/model/CustomAuthorities.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication-server/src/main/java/com/example/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication-server/src/main/java/com/example/service/CustomUserDetailsManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/example/config/CustomAuthentication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/example/config/JwtAuthenticationConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/example/config/JwtFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/example/config/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/example/config/ProjectConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/authentication-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication-server/src/main/java/com/examle/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-server/src/main/java/com/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication-server/src/main/java/com/examle/config/SecurityClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-server/src/main/java/com/example/config/SecurityClientConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication-server/src/main/java/com/examle/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-server/src/main/java/com/example/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication-server/src/main/java/com/examle/config/SecurityUserConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-server/src/main/java/com/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-server/src/main/java/com/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-server/src/main/java/com/example/Security/CustomUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-server/src/main/java/com/example/config/CustomUserDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-server/src/main/java/com/example/Security/SecurityUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-server/src/main/java/com/example/model/SecurityUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-server/src/main/java/com/example/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-server/src/main/java/com/example/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-server/src/main/java/com/example/config/SecurityUserConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-server/src/main/java/com/example/config/SecurityUserConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-server/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-server/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-server/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-server/src/main/resources/schema.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/main-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main-service/src/main/java/com/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/main-service/src/main/java/com/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main-service/src/main/java/com/example/controller/UserTaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/main-service/src/main/java/com/example/controller/UserTaskController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main-service/src/main/java/com/example/model/task/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/main-service/src/main/java/com/example/model/task/Task.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/main-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main-service/src/main/resources/schema.sql" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +90,7 @@
   <component name="RunManager" selected="Application.Main (1)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.Main" />
-      <module name="main-service" />
+      <module name="TMS-Resourcec-server" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.*" />
@@ -99,7 +103,7 @@
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" activateToolWindowBeforeRun="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.Main" />
-      <module name="authentication-server" />
+      <module name="TMS-Oauth-server" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.*" />
@@ -177,10 +181,19 @@
           </properties>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-oauth2-resource-server/6.4.2/spring-security-oauth2-resource-server-6.4.2.jar!/org/springframework/security/oauth2/server/resource/authentication/JwtAuthenticationProvider.class</url>
+          <line>32</line>
+          <properties class="org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationProvider" method="authenticate">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/main-service/src/main/java/com/example/Main.java</url>
-          <line>9</line>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/main-service/src/main/java/com/example/config/JwtUtil.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

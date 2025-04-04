@@ -15,11 +15,11 @@ public class Task {
     private Long id;
     private String title;
     private String description;
-    @OneToMany
-    @JoinColumn(name = "user_id")
+    @ManyToOne
+    @JoinColumn(name = "author_id")
     private User author;
     @OneToOne
-    @JoinColumn(name = "user_id")
+    @JoinColumn(name = "executor_id")
     private User executor;
     @ElementCollection
     @CollectionTable(name = "comments",joinColumns = @JoinColumn(name = "task_id"))

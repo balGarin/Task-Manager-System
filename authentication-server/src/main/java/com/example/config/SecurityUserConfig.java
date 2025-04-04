@@ -2,10 +2,15 @@ package com.example.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.provisioning.JdbcUserDetailsManager;
+
+import javax.sql.DataSource;
 
 @Configuration
 public class SecurityUserConfig {
@@ -41,13 +46,7 @@ public class SecurityUserConfig {
 
 
 
-    @Bean
-    public UserDetailsService userDetailsService() {
-        JdbcUserDetailsManager manager = new JdbcUserDetailsManager();
-        String usersByUsernameQuery = "select username,password,email,enabled from users where email = ?";
-        manager.setUsersByUsernameQuery(usersByUsernameQuery);
-        return manager;
-    }
+
 
 
 }

@@ -1,13 +1,16 @@
-package com.example.Security;
+package com.example.config;
 
+import com.example.model.SecurityUser;
 import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
 
 import java.util.Collection;
 import java.util.List;
+
 @Component
-public class CustomUserDetails  implements UserDetails {
+public class CustomUserDetails implements UserDetails {
     private final SecurityUser user;
 
     public CustomUserDetails(SecurityUser user) {
@@ -16,7 +19,7 @@ public class CustomUserDetails  implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return List.of(user::getAuthority);
+        return List.of(new SimpleGrantedAuthority(user.getAuthority()));
     }
 
     @Override
@@ -26,11 +29,11 @@ public class CustomUserDetails  implements UserDetails {
 
     @Override
     public String getUsername() {
-        return user.getName();
+        return user.getEmail();
     }
 
-    public String getEmail(){
-        return user.getEmail();
+    public String getName() {
+        return user.getName();
     }
 
 
