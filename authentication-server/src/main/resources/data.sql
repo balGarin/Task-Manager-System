@@ -1,14 +1,10 @@
 
 
-TRUNCATE TABLE authorities RESTART IDENTITY;
-TRUNCATE TABLE users RESTART IDENTITY;
+TRUNCATE TABLE users RESTART IDENTITY CASCADE ;
+
 
 INSERT INTO users
-(username,password,enabled)
-VALUES('Gaba','12345',gaba@yandex.ru,true),
-('Anna','123456',anna@yandex.ru,true);
+(username,password,email,authority,enabled)
+VALUES('Gaba','12345','gaba@yandex.ru','ADMIN',true),
+('Anna','123456','anna@yandex.ru','USER',true);
 
-INSERT INTO authorities
-(username,authority)
-VALUES('Gaba','ADMIN'),
-('Anna','USER');

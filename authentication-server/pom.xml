@@ -6,7 +6,6 @@
     <groupId>org.example</groupId>
     <artifactId>authentication-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>pom</packaging>
 
     <parent>
         <artifactId>Task-Management-System</artifactId>
@@ -23,10 +22,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jdbc</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <scope>runtime</scope>
-        </dependency>
+
+
     </dependencies>
 </project>
